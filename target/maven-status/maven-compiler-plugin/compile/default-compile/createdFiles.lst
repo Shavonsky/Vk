@@ -1,0 +1,9 @@
+ru\netology\domain\commentsInfo.class
+ru\netology\domain\text.class
+ru\netology\domain\repost.class
+ru\netology\domain\like.class
+ru\netology\domain\datePublication.class
+ru\netology\domain\views.class
+ru\netology\domain\nameGroup.class
+ru\netology\domain\id.class
+ru\netology\domain\image.class

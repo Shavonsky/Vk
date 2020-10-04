@@ -1,6 +1,11 @@
 package ru.netology.domain;
 
 public class Post {
+    public class LikesInfo{}
+    public class CommentsInfo{}
+    public class Geo{}
+    public class RepostsInfo{}
+    public class ViewsInfo{}
     private int id;
     private int ownerID;
     private int fromID;
@@ -11,21 +16,10 @@ public class Post {
     private int replyPostID;
     private boolean friendsOnly;
     private String commentButton;
-    private int commentCount;
-    private boolean commentCanPost;
-    private boolean commentCanClose;
-    private boolean commentCanOpen;
     private String copyright;
-    private int likesCount;
-    private boolean userLikes;
-    private boolean canLike;
-    private boolean canPublish;
-    private int repostsCount;
-    private boolean userReposted;
     private int viewsCount;
     private String postType;
     private String postSource;
-    private String geo;
     private int signerID;
     private boolean canPin;
     private boolean canDelete;
@@ -34,6 +28,7 @@ public class Post {
     private boolean markedAsAd;
     private boolean favorite;
     private int postponedID;
+    
 
     public int getId() {
         return id;
@@ -115,92 +110,12 @@ public class Post {
         this.commentButton = commentButton;
     }
 
-    public int getCommentCount() {
-        return commentCount;
-    }
-
-    public void setCommentCount(int commentCount) {
-        this.commentCount = commentCount;
-    }
-
-    public boolean isCommentCanPost() {
-        return commentCanPost;
-    }
-
-    public void setCommentCanPost(boolean commentCanPost) {
-        this.commentCanPost = commentCanPost;
-    }
-
-    public boolean isCommentCanClose() {
-        return commentCanClose;
-    }
-
-    public void setCommentCanClose(boolean commentCanClose) {
-        this.commentCanClose = commentCanClose;
-    }
-
-    public boolean isCommentCanOpen() {
-        return commentCanOpen;
-    }
-
-    public void setCommentCanOpen(boolean commentCanOpen) {
-        this.commentCanOpen = commentCanOpen;
-    }
-
     public String getCopyright() {
         return copyright;
     }
 
     public void setCopyright(String copyright) {
         this.copyright = copyright;
-    }
-
-    public int getLikesCount() {
-        return likesCount;
-    }
-
-    public void setLikesCount(int likesCount) {
-        this.likesCount = likesCount;
-    }
-
-    public boolean isUserLikes() {
-        return userLikes;
-    }
-
-    public void setUserLikes(boolean userLikes) {
-        this.userLikes = userLikes;
-    }
-
-    public boolean isCanLike() {
-        return canLike;
-    }
-
-    public void setCanLike(boolean canLike) {
-        this.canLike = canLike;
-    }
-
-    public boolean isCanPublish() {
-        return canPublish;
-    }
-
-    public void setCanPublish(boolean canPublish) {
-        this.canPublish = canPublish;
-    }
-
-    public int getRepostsCount() {
-        return repostsCount;
-    }
-
-    public void setRepostsCount(int repostsCount) {
-        this.repostsCount = repostsCount;
-    }
-
-    public boolean isUserReposted() {
-        return userReposted;
-    }
-
-    public void setUserReposted(boolean userReposted) {
-        this.userReposted = userReposted;
     }
 
     public int getViewsCount() {
@@ -225,14 +140,6 @@ public class Post {
 
     public void setPostSource(String postSource) {
         this.postSource = postSource;
-    }
-
-    public String getGeo() {
-        return geo;
-    }
-
-    public void setGeo(String geo) {
-        this.geo = geo;
     }
 
     public int getSignerID() {

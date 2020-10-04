@@ -1,4 +1,4 @@
 package ru.netology.domain;
 
-public class copiright {
+public class MarkedAsAds {
 }

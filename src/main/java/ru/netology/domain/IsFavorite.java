@@ -1,4 +1,4 @@
 package ru.netology.domain;
 
-public class postType {
+public class IsFavorite {
 }

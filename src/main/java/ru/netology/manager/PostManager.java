@@ -9,6 +9,5 @@ public class PostManager {
     }
 
     public Post[] delete(int ownerID, int postID){
-        return null;
     }
 }

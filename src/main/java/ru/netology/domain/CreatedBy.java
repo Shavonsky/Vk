@@ -1,5 +1,4 @@
 package ru.netology.domain;
 
-public class id {
-
+public class CreatedBy {
 }

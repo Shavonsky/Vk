@@ -1,4 +1,4 @@
 package ru.netology.domain;
 
-public class isPinned {
+public class Copiright {
 }

@@ -1,4 +1,5 @@
 package ru.netology.domain;
 
-public class nameGroup {
+public class Id {
+
 }

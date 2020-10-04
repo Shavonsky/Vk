@@ -1,4 +1,4 @@
 package ru.netology.domain;
 
-public class isFavorite {
+public class ReplyPostId {
 }

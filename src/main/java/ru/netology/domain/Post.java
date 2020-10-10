@@ -6,26 +6,18 @@ public class Post {
     private int fromID;
     private int createdBy;
     private int date;
-    private String mainText;
+    private String text;
     private int replyOwnerID;
     private int replyPostID;
     private boolean friendsOnly;
-    private String commentButton;
-    private int commentCount;
-    private boolean commentCanPost;
-    private boolean commentCanClose;
-    private boolean commentCanOpen;
+    private CommentsInfo commentsInfo;
     private String copyright;
-    private int likesCount;
-    private boolean userLikes;
-    private boolean canLike;
-    private boolean canPublish;
-    private int repostsCount;
-    private boolean userReposted;
+    private LakesInfo lakesInfo;
+    private RepostsInfo repostsInfo;
     private int viewsCount;
     private String postType;
-    private String postSource;
-    private String geo;
+    private int postSource;
+    private Geo geo;
     private int signerID;
     private boolean canPin;
     private boolean canDelete;
@@ -35,7 +27,8 @@ public class Post {
     private boolean favorite;
     private int postponedID;
 
-    public int getId() {
+    public
+    int getId() {
         return id;
     }
 
@@ -85,13 +78,13 @@ public class Post {
     }
 
     public
-    String getMainText() {
-        return mainText;
+    String getText() {
+        return text;
     }
 
     public
-    void setMainText(String mainText) {
-        this.mainText = mainText;
+    void setText(String text) {
+        this.text = text;
     }
 
     public
@@ -125,53 +118,13 @@ public class Post {
     }
 
     public
-    String getCommentButton() {
-        return commentButton;
+    CommentsInfo getCommentsInfo() {
+        return commentsInfo;
     }
 
     public
-    void setCommentButton(String commentButton) {
-        this.commentButton = commentButton;
-    }
-
-    public
-    int getCommentCount() {
-        return commentCount;
-    }
-
-    public
-    void setCommentCount(int commentCount) {
-        this.commentCount = commentCount;
-    }
-
-    public
-    boolean isCommentCanPost() {
-        return commentCanPost;
-    }
-
-    public
-    void setCommentCanPost(boolean commentCanPost) {
-        this.commentCanPost = commentCanPost;
-    }
-
-    public
-    boolean isCommentCanClose() {
-        return commentCanClose;
-    }
-
-    public
-    void setCommentCanClose(boolean commentCanClose) {
-        this.commentCanClose = commentCanClose;
-    }
-
-    public
-    boolean isCommentCanOpen() {
-        return commentCanOpen;
-    }
-
-    public
-    void setCommentCanOpen(boolean commentCanOpen) {
-        this.commentCanOpen = commentCanOpen;
+    void setCommentsInfo(CommentsInfo commentsInfo) {
+        this.commentsInfo = commentsInfo;
     }
 
     public
@@ -185,63 +138,23 @@ public class Post {
     }
 
     public
-    int getLikesCount() {
-        return likesCount;
+    LakesInfo getLakesInfo() {
+        return lakesInfo;
     }
 
     public
-    void setLikesCount(int likesCount) {
-        this.likesCount = likesCount;
+    void setLakesInfo(LakesInfo lakesInfo) {
+        this.lakesInfo = lakesInfo;
     }
 
     public
-    boolean isUserLikes() {
-        return userLikes;
+    RepostsInfo getRepostsInfo() {
+        return repostsInfo;
     }
 
     public
-    void setUserLikes(boolean userLikes) {
-        this.userLikes = userLikes;
-    }
-
-    public
-    boolean isCanLike() {
-        return canLike;
-    }
-
-    public
-    void setCanLike(boolean canLike) {
-        this.canLike = canLike;
-    }
-
-    public
-    boolean isCanPublish() {
-        return canPublish;
-    }
-
-    public
-    void setCanPublish(boolean canPublish) {
-        this.canPublish = canPublish;
-    }
-
-    public
-    int getRepostsCount() {
-        return repostsCount;
-    }
-
-    public
-    void setRepostsCount(int repostsCount) {
-        this.repostsCount = repostsCount;
-    }
-
-    public
-    boolean isUserReposted() {
-        return userReposted;
-    }
-
-    public
-    void setUserReposted(boolean userReposted) {
-        this.userReposted = userReposted;
+    void setRepostsInfo(RepostsInfo repostsInfo) {
+        this.repostsInfo = repostsInfo;
     }
 
     public
@@ -265,22 +178,22 @@ public class Post {
     }
 
     public
-    String getPostSource() {
+    int getPostSource() {
         return postSource;
     }
 
     public
-    void setPostSource(String postSource) {
+    void setPostSource(int postSource) {
         this.postSource = postSource;
     }
 
     public
-    String getGeo() {
+    Geo getGeo() {
         return geo;
     }
 
     public
-    void setGeo(String geo) {
+    void setGeo(Geo geo) {
         this.geo = geo;
     }
 
